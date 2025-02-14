@@ -1,15 +1,12 @@
 # niryxgames.github.io
 
-# - Niryx Games -
+# Copyright and Legal Notice
 
----
+© 2025 Niryx Games. All rights reserved.
 
-## Copyright Notice
+This website and its content are the property of Matías 'Niryx' Pose. Reproduction, distribution or modification of all or part of this website and its content without the express permission of Niryx Games is prohibited.
 
-© 2025 Matias "Niryx" Pose. All rights reserved. 
+**Intellectual Property Law:**
+This site is protected by Law 11,723 of Argentina. For more information about intellectual property, visit [Law 11.723](https://www.argentina.gob.ar/justicia/derechofacil/leysimple/propiedad-intelectual).
 
-This website and its content are the property of Niryx Games. Unauthorized reproduction, distribution or use of any part of this site without the express consent of Matias "Niryx" Pose is strictly prohibited. 
-
-For commercial inquiries or collaborations, please contact us through the channels provided in the contact section.
-
----
+Any unauthorized use of the materials on this site may result in legal action.
