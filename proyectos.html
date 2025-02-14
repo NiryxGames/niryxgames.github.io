@@ -92,9 +92,32 @@
         <p>&copy; 2025 Niryx Games. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.getElementById("mensaje-secreto").innerText = 
-            ["Paciencia, todo a su tiempo...", "Pronto sabrás más...", "¿Cuánto estás dispuesto a esperar?"][Math.floor(Math.random() * 3)];
-    </script>
+<script>
+    const mensajesProyectos = [
+        "Paciencia, todo a su tiempo...",
+        "Pronto sabrás más...",
+        "¿Cuánto estás dispuesto a esperar?",
+        "El desarrollo está en marcha... pero no como crees.",
+        "Alguien está trabajando en esto... pero no puedes verlo.",
+        "Los juegos aún no han despertado.",
+        "Cada línea de código es un paso más cerca de la verdad.",
+        "Los proyectos duermen, pero no por mucho tiempo.",
+        "El silencio antes de la tormenta...",
+        "¿Escuchaste eso? No, aún no es momento.",
+        "Miras fijamente la pantalla, esperando... ¿por qué?",
+        "El reloj avanza, pero aún no es la hora.",
+        "Las sombras ocultan lo que está por venir.",
+        "Si supieras lo que se está construyendo... ¿te quedarías?",
+        "Algo está cobrando vida dentro del código...",
+        "Un día, recordarás este momento.",
+        "La espera te está afectando, ¿verdad?",
+        "Hay quienes dicen que el tiempo es relativo... este es uno de esos casos.",
+        "Vuelve cuando las estrellas se alineen..."
+    ];
+
+    document.querySelector(".proyectos").innerText = 
+        mensajesProyectos[Math.floor(Math.random() * mensajesProyectos.length)];
+</script>
+
 </body>
 </html>
