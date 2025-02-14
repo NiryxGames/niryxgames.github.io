@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niryx Games</title>
     <style>
+        /* --- ESTILO GENERAL --- */
         body {
             font-family: Arial, sans-serif;
             background-color: white;
@@ -13,16 +14,26 @@
             padding: 0;
             text-align: center;
         }
-        header {
+
+        /* --- BANNER COMO HEADER RECTANGULAR --- */
+        .banner-container {
             width: 100%;
+            height: 150px; /* Ajusta la altura */
+            overflow: hidden; /* Oculta partes extra de la imagen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Fondo negro por si la imagen no carga */
         }
+
         .banner {
             width: 100%;
-            max-width: 1920px;
             height: auto;
-            display: block;
-            margin: 0 auto;
+            max-height: 150px; /* Ajusta la altura */
+            object-fit: cover; /* Recorta la imagen para que encaje bien */
         }
+
+        /* --- MENÚ DE NAVEGACIÓN --- */
         nav {
             margin: 20px 0;
         }
@@ -32,9 +43,8 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        main {
-            padding: 20px;
-        }
+
+        /* --- FOOTER --- */
         footer {
             text-align: center;
             margin-top: 50px;
@@ -44,20 +54,27 @@
     </style>
 </head>
 <body>
+
+    <!-- BANNER RECTANGULAR -->
     <header>
-        <img src="SplashScreen.png" alt="Niryx Games Banner" class="banner">
+        <div class="banner-container">
+            <img src="SplashScreen.png" alt="Niryx Games Banner" class="banner">
+        </div>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Proyectos</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
+
     <main>
         <h2>Bienvenido a Niryx Games</h2>
         <p>Estamos desarrollando juegos indie emocionantes. ¡Mantente atento!</p>
     </main>
+
     <footer>
         <p>&copy; 2025 Niryx Games. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
