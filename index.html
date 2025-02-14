@@ -17,20 +17,20 @@
 
         /* --- BANNER COMO HEADER RECTANGULAR --- */
         .banner-container {
-        width: 100%;
-        height: 200px; /* Aumentamos la altura */
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
+            width: 100%;
+            height: 150px; /* Ajusta la altura */
+            overflow: hidden; /* Oculta partes extra de la imagen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Fondo negro por si la imagen no carga */
         }
 
         .banner {
-        width: 100%;
-        height: auto;
-        max-height: 200px; /* Ajustamos el tamaño */
-        object-fit: contain; /* Muestra toda la imagen sin recortar */
+            width: 100%;
+            height: auto;
+            max-height: 150px; /* Ajusta la altura */
+            object-fit: cover; /* Recorta la imagen para que encaje bien */
         }
 
         /* --- MENÚ DE NAVEGACIÓN --- */
