@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Niryx Games</title>
     <link rel="icon" href="Icon64.png" sizes="64x64" type="image/png">
-    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS si tienes uno -->
+    <link rel="icon" href="Icon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Icon16.png" sizes="16x16" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,17 +16,26 @@
             padding: 0;
         }
         
+        /* Estilo del header */
         header {
             text-align: center;
             background-color: white;
         }
-        
+
+        /* Ajuste del banner */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Menú de navegación */
         nav {
             background-color: white;
             padding: 15px 0;
             text-align: center;
         }
-        
+
         nav a {
             color: #ff0000;
             text-decoration: none;
@@ -34,22 +44,38 @@
             font-weight: bold;
             transition: color 0.3s ease;
         }
-        
+
         nav a:hover {
             color: black;
         }
-        
+
+        /* Contenido principal */
         main {
             text-align: center;
             padding: 50px 20px;
         }
 
-        .proyectos {
-            font-size: 20px; /* Tamaño del texto para los mensajes */
-            margin-top: 20px;
-            font-weight: bold; /* Para resaltar los mensajes */
+        .proyecto {
+            border: 2px solid #ff0000;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            background-color: #fff5f5;
         }
 
+        .proyecto img {
+            max-width: 100%;
+            border-radius: 10px;
+            opacity: 0.5; /* Hace que la imagen se vea misteriosa */
+        }
+
+        .proyecto h3 {
+            color: #ff0000;
+        }
+
+        /* Pie de página */
         footer {
             text-align: center;
             padding: 20px;
@@ -61,76 +87,42 @@
 </head>
 <body>
     <header>
-        <h1>Proyectos de Niryx Games</h1>
+        <img src="GitHub.png" alt="Banner de Niryx Games">
         <nav>
             <a href="index.html">Inicio</a>
             <a href="proyectos.html">Proyectos</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-
+    
     <main>
-        <h2>Próximamente...</h2>
-        <div class="proyectos"></div>
+        <h2>Proyectos - Próximamente</h2>
+        <p>Estamos trabajando en varios proyectos secretos. Mantente atento para más información.</p>
+
+        <!-- Proyecto 1 (Secreto) -->
+        <div class="proyecto">
+            <h3>Proyecto Secreto #1</h3>
+            <img src="misterioso.png" alt="Proyecto Misterioso">
+            <p>Algo increíble está en camino... pero aún no podemos revelar nada.</p>
+        </div>
+
+        <!-- Proyecto 2 (Secreto) -->
+        <div class="proyecto">
+            <h3>Proyecto Secreto #2</h3>
+            <img src="misterioso.png" alt="Proyecto Misterioso">
+            <p>Un nuevo mundo está en desarrollo. Pronto podrás descubrirlo.</p>
+        </div>
+
+        <!-- Proyecto 3 (Secreto) -->
+        <div class="proyecto">
+            <h3>Proyecto Secreto #3</h3>
+            <img src="misterioso.png" alt="Proyecto Misterioso">
+            <p>Algo grande se avecina... ¿Estás listo?</p>
+        </div>
     </main>
     
     <footer>
-        <p id="mensaje-secreto"></p> <!-- Aquí se mostrará un mensaje secreto -->
-        <script>
-            const mensajes = [
-                "El futuro de los juegos está por revelarse...",
-                "Algo oscuro se esconde en las sombras...",
-                "¿Estás seguro de querer saber la verdad?",
-                "Los secretos de Niryx Games pronto serán revelados...",
-                "Vuelve pronto. Algo está cambiando...",
-                "Los enigmas no se resuelven solos...",
-                "El tiempo corre... y los misterios crecen.",
-                "Nada es lo que parece.",
-                "La espera valdrá la pena.",
-                "Pronto entenderás...",
-                "Alguien te está observando...",
-                "Los datos no mienten, pero las apariencias sí...",
-                "Has encontrado un mensaje que no deberías haber visto.",
-                "¿Realidad o ilusión? Tú decides...",
-                "No estás solo en esta página... o tal vez sí.",
-                "El código guarda secretos que aún no has descifrado.",
-                "Espera... algo está mal...",
-                "Error 404: La verdad no fue encontrada.",
-                "¿Cuánto tiempo más puedes esperar?",
-                "Las piezas están en su lugar, solo falta un movimiento más."
-            ];
-
-            document.getElementById("mensaje-secreto").innerText = 
-                mensajes[Math.floor(Math.random() * mensajes.length)];
-        </script>
-        
-        <script>
-            const mensajesProyectos = [
-                "Paciencia, todo a su tiempo...",
-                "Pronto sabrás más...",
-                "¿Cuánto estás dispuesto a esperar?",
-                "El desarrollo está en marcha... pero no como crees.",
-                "Alguien está trabajando en esto... pero no puedes verlo.",
-                "Los juegos aún no han despertado.",
-                "Cada línea de código es un paso más cerca de la verdad.",
-                "Los proyectos duermen, pero no por mucho tiempo.",
-                "El silencio antes de la tormenta...",
-                "¿Escuchaste eso? No, aún no es momento.",
-                "Miras fijamente la pantalla, esperando... ¿por qué?",
-                "El reloj avanza, pero aún no es la hora.",
-                "Las sombras ocultan lo que está por venir.",
-                "Si supieras lo que se está construyendo... ¿te quedarías?",
-                "Algo está cobrando vida dentro del código...",
-                "Un día, recordarás este momento.",
-                "La espera te está afectando, ¿verdad?",
-                "Hay quienes dicen que el tiempo es relativo... este es uno de esos casos.",
-                "Vuelve cuando las estrellas se alineen...",
-                "5pys5b2T44Gr44GT44KM44KS5pu444GE44Gm44GE44KL44Gu44Gv6Kqw44Gn44GZ44GL77yf"
-            ];
-
-            document.querySelector(".proyectos").innerText = 
-                mensajesProyectos[Math.floor(Math.random() * mensajesProyectos.length)];
-        </script>
+        <p>&copy; 2025 Niryx Games. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
