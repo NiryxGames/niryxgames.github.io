@@ -5,76 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niryx Games</title>
     <style>
-        /* --- ESTILO GENERAL --- */
         body {
             font-family: Arial, sans-serif;
             background-color: white;
             color: #ff0000; /* Rojo */
             margin: 0;
             padding: 0;
+        }
+        
+        /* Estilo del header */
+        header {
             text-align: center;
+            background-color: white;
         }
-
-        /* --- BANNER COMO HEADER RECTANGULAR --- */
-        .banner-container {
-            width: 100%;
-            height: 150px; /* Ajusta la altura */
-            overflow: hidden; /* Oculta partes extra de la imagen */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000; /* Fondo negro por si la imagen no carga */
-        }
-
-        .banner {
+        
+        /* Ajuste del banner */
+        header img {
             width: 100%;
             height: auto;
-            max-height: 150px; /* Ajusta la altura */
-            object-fit: cover; /* Recorta la imagen para que encaje bien */
+            display: block;
         }
-
-        /* --- MENÚ DE NAVEGACIÓN --- */
+        
+        /* Estilo del menú de navegación */
         nav {
-            margin: 20px 0;
+            background-color: white;
+            padding: 15px 0;
+            text-align: center;
         }
+        
         nav a {
-            color: #ff0000; /* Rojo */
+            color: #ff0000;
             text-decoration: none;
-            margin: 0 15px;
             font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
-
-        /* --- FOOTER --- */
+        
+        nav a:hover {
+            color: black; /* Efecto al pasar el mouse */
+        }
+        
+        /* Contenido principal */
+        main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        /* Pie de página */
         footer {
             text-align: center;
-            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
             font-size: 14px;
-            color: gray;
+            color: #777;
         }
     </style>
 </head>
 <body>
-
-    <!-- BANNER RECTANGULAR -->
     <header>
-        <div class="banner-container">
-            <img src="GitHub.png" alt="Niryx Games Banner" class="banner">
-        </div>
+        <img src="GitHub.png" alt="Banner de Niryx Games">
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Proyectos</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
-
+    
     <main>
         <h2>Bienvenido a Niryx Games</h2>
         <p>Estamos desarrollando juegos indie emocionantes. ¡Mantente atento!</p>
     </main>
-
+    
     <footer>
         <p>&copy; 2025 Niryx Games. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
