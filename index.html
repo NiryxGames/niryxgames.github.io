@@ -10,14 +10,18 @@
             background-color: white;
             color: #ff0000; /* Rojo */
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            text-align: center;
         }
         header {
-            text-align: center;
-            padding: 50px;
+            width: 100%;
         }
-        h1 {
-            font-size: 48px;
+        .banner {
+            width: 100%;
+            max-width: 1920px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
         nav {
             margin: 20px 0;
@@ -26,16 +30,22 @@
             color: #ff0000; /* Rojo */
             text-decoration: none;
             margin: 0 15px;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
         }
         footer {
             text-align: center;
             margin-top: 50px;
+            font-size: 14px;
+            color: gray;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Niryx Games</h1>
+        <img src="SplashScreen.png" alt="Niryx Games Banner" class="banner">
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Proyectos</a>
@@ -51,4 +61,3 @@
     </footer>
 </body>
 </html>
-
