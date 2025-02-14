@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niryx Games</title>
-    <link rel="icon" href="Icon64.png" sizes="64x64" type="image/png"> <!-- Icono de 64x64 -->
-    <link rel="icon" href="Icon32.png" sizes="32x32" type="image/png"> <!-- Icono de 32x32 -->
-    <link rel="icon" href="Icon16.png" sizes="16x16" type="image/png"> <!-- Icono de 16x16 -->
+    <link rel="icon" href="Icon64.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="Icon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Icon16.png" sizes="16x16" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: white;
-            color: #ff0000; /* Rojo */
+            color: #ff0000;
             margin: 0;
             padding: 0;
         }
@@ -46,7 +46,7 @@
         }
         
         nav a:hover {
-            color: black; /* Efecto al pasar el mouse */
+            color: black;
         }
         
         /* Contenido principal */
@@ -61,14 +61,14 @@
         }
         
         .social-links a {
-            color: #ff0000; /* Color original */
+            color: #ff0000;
             margin: 0 10px;
             text-decoration: none;
-            transition: color 0.3s ease; /* Transición suave */
+            transition: color 0.3s ease;
         }
 
         .social-links a:hover {
-            color: black; /* Color al pasar el mouse */
+            color: black;
         }
 
         /* Pie de página */
@@ -85,9 +85,9 @@
     <header>
         <img src="GitHub.png" alt="Banner de Niryx Games">
         <nav>
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="proyectos.html">Proyectos</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
     
@@ -95,8 +95,8 @@
         <h2>Bienvenido a Niryx Games</h2>
         <p>Estamos desarrollando juegos indie emocionantes. ¡Mantente atento!</p>
         <h3>Sobre Niryx Games</h3>
-        <p>Niryx Games es una persona dedicado a crear experiencias de juego únicas y emocionales. Me enfoco en narrativas cautivadoras y personajes memorables, explorando temas que resuenan con los jugadores.</p>
-        <p>Creado por Matias 'Niryx' Pose.<p>
+        <p>Niryx Games es un estudio dedicado a crear experiencias de juego únicas y emocionales. Me enfoco en narrativas cautivadoras y personajes memorables, explorando temas que resuenan con los jugadores.</p>
+        <p>Creado por Matias 'Niryx' Pose.</p>
 
         <div class="social-links">
             <h4>Sígueme en:</h4>
@@ -107,7 +107,25 @@
     </main>
     
     <footer>
+        <p id="mensaje-secreto"></p>
         <p>&copy; 2025 Niryx Games. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const mensajes = [
+            "El futuro de los juegos está por revelarse...",
+            "Algo oscuro se esconde en las sombras...",
+            "¿Estás seguro de querer saber la verdad?",
+            "Los secretos de Niryx Games pronto serán revelados...",
+            "Vuelve pronto. Algo está cambiando...",
+            "Los enigmas no se resuelven solos...",
+            "El tiempo corre... y los misterios crecen.",
+            "Nada es lo que parece.",
+            "La espera valdrá la pena."
+        ];
+
+        document.getElementById("mensaje-secreto").innerText = 
+            mensajes[Math.floor(Math.random() * mensajes.length)];
+    </script>
 </body>
 </html>
