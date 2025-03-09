@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-color: #f8f8f8; /* Color de fondo suave */
             color: #ff0000; /* Rojo */
             margin: 0;
             padding: 0;
@@ -55,7 +55,7 @@
             padding: 50px 20px;
         }
 
-        .contacto {
+        .contacto, .discord {
             border: 2px solid #ff0000;
             padding: 20px;
             margin: 20px auto;
@@ -63,40 +63,37 @@
             max-width: 400px;
             border-radius: 10px;
             background-color: #fff5f5;
+            transition: transform 0.2s ease;
         }
 
-        .contacto h3 {
+        .contacto:hover, .discord:hover {
+            transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+        }
+
+        .contacto h3, .discord h3 {
             color: #ff0000;
         }
 
-        .contacto p {
+        .contacto p, .discord p {
             font-size: 18px;
         }
 
-        .contacto a {
-            color: #ff0000;
-            font-weight: bold;
+        /* Estilo de botones */
+        .button {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        .contacto a:hover {
-            color: black;
-        }
-
-        /* Nueva sección de Discord */
-        .discord {
-            border: 2px solid #ff0000;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 10px;
-            background-color: #fff5f5;
-        }
-
-        .discord h3 {
-            color: #ff0000;
+        .button:hover {
+            background-color: black;
         }
 
         /* Pie de página */
@@ -126,7 +123,7 @@
         <div class="contacto">
             <h3>Email</h3>
             <p>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niryx.inc@gmail.com" target="_blank">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niryx.inc@gmail.com" target="_blank" class="button">
                     niryx.inc@gmail.com
                 </a>
             </p>
@@ -135,9 +132,9 @@
         <div class="discord">
             <h3>Join Our Discord</h3>
             <p>
-                Connect with the community and stay updated! Click the link below to join our Discord server:
+                Connect with the community and stay updated! Click the button below to join our Discord server:
                 <br>
-                <a href="https://discord.gg/azDYcfZ3Kb" target="_blank">Join Discord Server</a>
+                <a href="https://discord.gg/azDYcfZ3Kb" target="_blank" class="button">Join Discord Server</a>
             </p>
         </div>
     </main>
